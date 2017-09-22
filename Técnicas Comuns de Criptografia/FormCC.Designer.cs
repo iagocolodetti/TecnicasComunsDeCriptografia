@@ -35,11 +35,11 @@
             this.btDecifrar = new System.Windows.Forms.Button();
             this.btVoltar = new System.Windows.Forms.Button();
             this.TLP1 = new System.Windows.Forms.TableLayoutPanel();
-            this.RtbTexto = new System.Windows.Forms.RichTextBox();
-            this.RtbResultado = new System.Windows.Forms.RichTextBox();
-            this.BtInverter = new System.Windows.Forms.Button();
-            this.LbTexto = new System.Windows.Forms.Label();
             this.LbResultado = new System.Windows.Forms.Label();
+            this.LbTexto = new System.Windows.Forms.Label();
+            this.BtInverter = new System.Windows.Forms.Button();
+            this.RtbResultado = new System.Windows.Forms.RichTextBox();
+            this.RtbTexto = new System.Windows.Forms.RichTextBox();
             this.BtLimparTexto = new System.Windows.Forms.Button();
             this.BtLimparResultado = new System.Windows.Forms.Button();
             this.TLP1.SuspendLayout();
@@ -49,7 +49,7 @@
             // 
             this.LbDeslocamento.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.LbDeslocamento.AutoSize = true;
-            this.LbDeslocamento.Location = new System.Drawing.Point(160, 268);
+            this.LbDeslocamento.Location = new System.Drawing.Point(148, 268);
             this.LbDeslocamento.Name = "LbDeslocamento";
             this.LbDeslocamento.Size = new System.Drawing.Size(109, 18);
             this.LbDeslocamento.TabIndex = 8;
@@ -58,10 +58,10 @@
             // TbDeslocamento
             // 
             this.TbDeslocamento.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.TbDeslocamento.Location = new System.Drawing.Point(275, 265);
+            this.TbDeslocamento.Location = new System.Drawing.Point(263, 265);
             this.TbDeslocamento.MaxLength = 3;
             this.TbDeslocamento.Name = "TbDeslocamento";
-            this.TbDeslocamento.Size = new System.Drawing.Size(130, 24);
+            this.TbDeslocamento.Size = new System.Drawing.Size(133, 24);
             this.TbDeslocamento.TabIndex = 9;
             this.TbDeslocamento.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -90,9 +90,9 @@
             // btVoltar
             // 
             this.btVoltar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btVoltar.Location = new System.Drawing.Point(217, 337);
+            this.btVoltar.Location = new System.Drawing.Point(207, 337);
             this.btVoltar.Name = "btVoltar";
-            this.btVoltar.Size = new System.Drawing.Size(111, 27);
+            this.btVoltar.Size = new System.Drawing.Size(132, 27);
             this.btVoltar.TabIndex = 12;
             this.btVoltar.Text = "Voltar";
             this.btVoltar.UseVisualStyleBackColor = true;
@@ -123,25 +123,25 @@
             this.TLP1.Size = new System.Drawing.Size(520, 244);
             this.TLP1.TabIndex = 0;
             // 
-            // RtbTexto
+            // LbResultado
             // 
-            this.RtbTexto.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.RtbTexto.Location = new System.Drawing.Point(3, 43);
-            this.RtbTexto.Name = "RtbTexto";
-            this.RtbTexto.Size = new System.Drawing.Size(224, 158);
-            this.RtbTexto.TabIndex = 3;
-            this.RtbTexto.Text = "";
+            this.LbResultado.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.LbResultado.AutoSize = true;
+            this.LbResultado.Location = new System.Drawing.Point(367, 11);
+            this.LbResultado.Name = "LbResultado";
+            this.LbResultado.Size = new System.Drawing.Size(75, 18);
+            this.LbResultado.TabIndex = 2;
+            this.LbResultado.Text = "Resultado";
             // 
-            // RtbResultado
+            // LbTexto
             // 
-            this.RtbResultado.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.RtbResultado.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.RtbResultado.Location = new System.Drawing.Point(293, 43);
-            this.RtbResultado.Name = "RtbResultado";
-            this.RtbResultado.ReadOnly = true;
-            this.RtbResultado.Size = new System.Drawing.Size(224, 158);
-            this.RtbResultado.TabIndex = 5;
-            this.RtbResultado.Text = "";
+            this.LbTexto.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.LbTexto.AutoSize = true;
+            this.LbTexto.Location = new System.Drawing.Point(92, 11);
+            this.LbTexto.Name = "LbTexto";
+            this.LbTexto.Size = new System.Drawing.Size(45, 18);
+            this.LbTexto.TabIndex = 1;
+            this.LbTexto.Text = "Texto";
             // 
             // BtInverter
             // 
@@ -154,25 +154,25 @@
             this.BtInverter.UseVisualStyleBackColor = true;
             this.BtInverter.Click += new System.EventHandler(this.BtInverter_Click);
             // 
-            // LbTexto
+            // RtbResultado
             // 
-            this.LbTexto.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.LbTexto.AutoSize = true;
-            this.LbTexto.Location = new System.Drawing.Point(92, 11);
-            this.LbTexto.Name = "LbTexto";
-            this.LbTexto.Size = new System.Drawing.Size(45, 18);
-            this.LbTexto.TabIndex = 1;
-            this.LbTexto.Text = "Texto";
+            this.RtbResultado.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.RtbResultado.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.RtbResultado.Location = new System.Drawing.Point(293, 43);
+            this.RtbResultado.Name = "RtbResultado";
+            this.RtbResultado.ReadOnly = true;
+            this.RtbResultado.Size = new System.Drawing.Size(224, 158);
+            this.RtbResultado.TabIndex = 5;
+            this.RtbResultado.Text = "";
             // 
-            // LbResultado
+            // RtbTexto
             // 
-            this.LbResultado.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.LbResultado.AutoSize = true;
-            this.LbResultado.Location = new System.Drawing.Point(367, 11);
-            this.LbResultado.Name = "LbResultado";
-            this.LbResultado.Size = new System.Drawing.Size(75, 18);
-            this.LbResultado.TabIndex = 2;
-            this.LbResultado.Text = "Resultado";
+            this.RtbTexto.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.RtbTexto.Location = new System.Drawing.Point(3, 43);
+            this.RtbTexto.Name = "RtbTexto";
+            this.RtbTexto.Size = new System.Drawing.Size(224, 158);
+            this.RtbTexto.TabIndex = 3;
+            this.RtbTexto.Text = "";
             // 
             // BtLimparTexto
             // 
@@ -199,7 +199,7 @@
             // FormCC
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(544, 379);
             this.Controls.Add(this.TLP1);
             this.Controls.Add(this.btDecifrar);

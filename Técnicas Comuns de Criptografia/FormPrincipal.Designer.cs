@@ -69,7 +69,7 @@
             // 
             // btAbrir
             // 
-            this.btAbrir.Location = new System.Drawing.Point(116, 182);
+            this.btAbrir.Location = new System.Drawing.Point(109, 182);
             this.btAbrir.Name = "btAbrir";
             this.btAbrir.Size = new System.Drawing.Size(118, 30);
             this.btAbrir.TabIndex = 3;
@@ -80,8 +80,8 @@
             // FormPrincipal
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.ClientSize = new System.Drawing.Size(351, 222);
+            this.BackColor = System.Drawing.Color.Silver;
+            this.ClientSize = new System.Drawing.Size(338, 222);
             this.Controls.Add(this.btAbrir);
             this.Controls.Add(this.rbCRF);
             this.Controls.Add(this.rbCC);
@@ -90,7 +90,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(367, 261);
+            this.MinimumSize = new System.Drawing.Size(354, 261);
             this.Name = "FormPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Técnicas Comuns de Criptografia";

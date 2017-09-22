@@ -90,9 +90,9 @@
             // btVoltar
             // 
             this.btVoltar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btVoltar.Location = new System.Drawing.Point(219, 352);
+            this.btVoltar.Location = new System.Drawing.Point(207, 352);
             this.btVoltar.Name = "btVoltar";
-            this.btVoltar.Size = new System.Drawing.Size(108, 27);
+            this.btVoltar.Size = new System.Drawing.Size(132, 27);
             this.btVoltar.TabIndex = 11;
             this.btVoltar.Text = "Voltar";
             this.btVoltar.UseVisualStyleBackColor = true;
@@ -136,7 +136,7 @@
             // 
             // RtbResultado
             // 
-            this.RtbResultado.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.RtbResultado.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.RtbResultado.Dock = System.Windows.Forms.DockStyle.Fill;
             this.RtbResultado.Location = new System.Drawing.Point(294, 43);
             this.RtbResultado.Name = "RtbResultado";
@@ -189,7 +189,7 @@
             // FormCA
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(547, 394);
             this.Controls.Add(this.LbChave);
             this.Controls.Add(this.TbChave);

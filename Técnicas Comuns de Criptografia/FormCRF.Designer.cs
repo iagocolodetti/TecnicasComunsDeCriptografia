@@ -33,8 +33,8 @@
             this.btDecifrar = new System.Windows.Forms.Button();
             this.btVoltar = new System.Windows.Forms.Button();
             this.TLP1 = new System.Windows.Forms.TableLayoutPanel();
-            this.RtbTexto = new System.Windows.Forms.RichTextBox();
             this.RtbResultado = new System.Windows.Forms.RichTextBox();
+            this.RtbTexto = new System.Windows.Forms.RichTextBox();
             this.LbTexto = new System.Windows.Forms.Label();
             this.LbResultado = new System.Windows.Forms.Label();
             this.BtInverter = new System.Windows.Forms.Button();
@@ -103,15 +103,6 @@
             this.TLP1.Size = new System.Drawing.Size(521, 222);
             this.TLP1.TabIndex = 0;
             // 
-            // RtbTexto
-            // 
-            this.RtbTexto.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.RtbTexto.Location = new System.Drawing.Point(3, 43);
-            this.RtbTexto.Name = "RtbTexto";
-            this.RtbTexto.Size = new System.Drawing.Size(224, 176);
-            this.RtbTexto.TabIndex = 3;
-            this.RtbTexto.Text = "";
-            // 
             // RtbResultado
             // 
             this.RtbResultado.BackColor = System.Drawing.SystemColors.AppWorkspace;
@@ -122,6 +113,15 @@
             this.RtbResultado.Size = new System.Drawing.Size(225, 176);
             this.RtbResultado.TabIndex = 5;
             this.RtbResultado.Text = "";
+            // 
+            // RtbTexto
+            // 
+            this.RtbTexto.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.RtbTexto.Location = new System.Drawing.Point(3, 43);
+            this.RtbTexto.Name = "RtbTexto";
+            this.RtbTexto.Size = new System.Drawing.Size(224, 176);
+            this.RtbTexto.TabIndex = 3;
+            this.RtbTexto.Text = "";
             // 
             // LbTexto
             // 
@@ -199,7 +199,7 @@
             // FormCRF
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(545, 326);
             this.Controls.Add(this.TLB2);
             this.Controls.Add(this.TLP1);
