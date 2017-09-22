@@ -13,11 +13,23 @@ namespace Técnicas_Comuns_de_Criptografia
             criptografia = new Criptografia();
         }
 
+        private void BtInverter_Click(object sender, EventArgs e)
+        {
+            string aux = RtbTexto.Text;
+            RtbTexto.Text = RtbResultado.Text;
+            RtbResultado.Text = aux;
+        }
+
+        private void BtLimparTexto_Click(object sender, EventArgs e)
+        {
+            RtbTexto.Clear();
+        }
+
         private void BtCifrar_Click(object sender, EventArgs e)
         {
             try
             {
-                textBox2.Text = criptografia.Cifrar(textBox1.Text);
+                RtbResultado.Text = criptografia.Cifrar(RtbTexto.Text);
             }
             catch (Exception ex)
             {
@@ -29,12 +41,17 @@ namespace Técnicas_Comuns_de_Criptografia
         {
             try
             {
-                textBox2.Text = criptografia.Decifrar(textBox1.Text);
+                RtbResultado.Text = criptografia.Decifrar(RtbTexto.Text);
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void BtLimparResultado_Click(object sender, EventArgs e)
+        {
+            RtbResultado.Clear();
         }
 
         private void BtVoltar_Click(object sender, EventArgs e)

@@ -13,15 +13,32 @@ namespace Técnicas_Comuns_de_Criptografia
             criptografia = new Criptografia();
         }
 
+        private void BtInverter_Click(object sender, EventArgs e)
+        {
+            string aux = RtbTexto.Text;
+            RtbTexto.Text = RtbResultado.Text;
+            RtbResultado.Text = aux;
+        }
+
+        private void BtLimparTexto_Click(object sender, EventArgs e)
+        {
+            RtbTexto.Clear();
+        }
+
+        private void BtLimparResultado_Click(object sender, EventArgs e)
+        {
+            RtbResultado.Clear();
+        }
+
         private void BtCifrar_Click(object sender, EventArgs e)
         {
             try
             {
-                if (!string.IsNullOrEmpty(textBox2.Text))
+                if (!string.IsNullOrEmpty(TbDeslocamento.Text))
                 {
-                    if (int.TryParse(textBox2.Text, out int k))
+                    if (int.TryParse(TbDeslocamento.Text, out int k))
                     {
-                         textBox3.Text = criptografia.Cifrar(textBox1.Text, k);
+                         RtbResultado.Text = criptografia.Cifrar(RtbTexto.Text, k);
                     }
                     else MessageBox.Show("Use um inteiro para deslocamento.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -37,11 +54,11 @@ namespace Técnicas_Comuns_de_Criptografia
         {
             try
             {
-                if (!string.IsNullOrEmpty(textBox2.Text))
+                if (!string.IsNullOrEmpty(TbDeslocamento.Text))
                 {
-                    if (int.TryParse(textBox2.Text, out int k))
+                    if (int.TryParse(TbDeslocamento.Text, out int k))
                     {
-                        textBox3.Text = criptografia.Decifrar(textBox1.Text, k);
+                        RtbResultado.Text = criptografia.Decifrar(RtbTexto.Text, k);
                     }
                     else MessageBox.Show("Use um inteiro para deslocamento.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
