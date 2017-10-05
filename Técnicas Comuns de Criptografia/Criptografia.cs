@@ -22,11 +22,6 @@ namespace Técnicas_Comuns_de_Criptografia
             return (!string.IsNullOrEmpty(invalidchars));
         }
 
-        private string To8DigitsBinary(string text)
-        {
-            return (text.Length == 8) ? text : To8DigitsBinary("0" + text);
-        }
-
         /// <summary>
         /// Método de ciframento baseado na substituição de caracteres, no qual cada caractere é convertido para binário de acordo com a tabela ASCII e somado a uma chave binária.
         /// Este método também decifra em caso de ser um(a) texto/palavra cifrado por ele.
@@ -43,10 +38,10 @@ namespace Técnicas_Comuns_de_Criptografia
             if (InvalidCharsInString(text, out string invalidchars, 0, 255)) throw new Exception("Existe(m) caractere(s) inválido(s) no(a) texto/palavra.\nCaracteres inválidos: " + invalidchars);
 
             string textCifrado = string.Empty;
-            key = To8DigitsBinary(key);
+            key = key.PadLeft(8, '0');
             foreach (char c in text)
             {
-                string charBinary = To8DigitsBinary(Convert.ToString(c, 2));
+                string charBinary = Convert.ToString(c, 2).PadLeft(8, '0');
                 string charCifrado = string.Empty;
                 for (int i = 0; i < 8; i++) charCifrado = charCifrado.Insert(i, ((Equals(charBinary[i], key[i]) ? "0" : "1")));
                 textCifrado += (char)Convert.ToInt32(charCifrado, 2);
