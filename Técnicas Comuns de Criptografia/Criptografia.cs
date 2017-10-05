@@ -148,7 +148,7 @@ namespace Técnicas_Comuns_de_Criptografia
         }
 
         /// <summary>
-        /// Método de ciframento usando matemática. A partir da chave é gerado um valor que é somado ao valor de cada caractere na tabela ASCII.
+        /// Método de ciframento usando matemática. A partir da chave um valor é gerado e é somado ao valor em decimal de cada caractere na tabela ASCII.
         /// </summary>
         /// <param name="text">Texto/Palavra a ser cifrado(a).</param>
         /// <param name="key">Chave.</param>
