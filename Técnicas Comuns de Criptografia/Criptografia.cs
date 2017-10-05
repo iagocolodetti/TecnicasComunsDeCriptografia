@@ -146,5 +146,37 @@ namespace Técnicas_Comuns_de_Criptografia
             }
             return textDecifrado;
         }
+
+        public string CifrarM(string text, string key)
+        {
+            if (string.IsNullOrEmpty(text)) throw new Exception("Digite algum(a) texto/palavra para ser cifrado(a).");
+            if (string.IsNullOrEmpty(key)) throw new Exception("Digite uma chave.");
+            if (key.Length > 8) throw new Exception("A chave deve ter no máximo 8 dígitos.");
+            if (InvalidCharsInString(text, out string invalidchars, 32, 255)) throw new Exception("Existe(m) caractere(s) inválido(s) no(a) texto/palavra.\nCaracteres inválidos: " + invalidchars);
+            if (InvalidCharsInString(key, out invalidchars, 33, 255)) throw new Exception("Existe(m) caractere(s) inválido(s) na chave.\nCaracteres inválidos: " + invalidchars);
+            
+            int valorDaChave = 0;
+            for (int i = 0; i < key.Length; i++) valorDaChave += (key[i] * (key.Length - i));
+            int MAX_BLOCK_LENGTH = Convert.ToString((255 + valorDaChave), 16).Length;
+            string textCifrado = MAX_BLOCK_LENGTH.ToString();
+            foreach (char c in text) textCifrado += Convert.ToString((c + valorDaChave), 16).PadLeft(MAX_BLOCK_LENGTH, '0');
+            return textCifrado;
+        }
+
+        public string DecifrarM(string text, string key)
+        {
+            if (string.IsNullOrEmpty(text)) throw new Exception("Digite algum(a) texto/palavra para ser cifrado(a).");
+            if (string.IsNullOrEmpty(key)) throw new Exception("Digite uma chave.");
+            if (key.Length > 8) throw new Exception("A chave deve ter no máximo 8 dígitos.");
+            if (InvalidCharsInString(text, out string invalidchars, 32, 255)) throw new Exception("Existe(m) caractere(s) inválido(s) no(a) texto/palavra.\nCaracteres inválidos: " + invalidchars);
+            if (InvalidCharsInString(key, out invalidchars, 33, 255)) throw new Exception("Existe(m) caractere(s) inválido(s) na chave.\nCaracteres inválidos: " + invalidchars);
+            if (!int.TryParse(text[0].ToString(), out int MAX_BLOCK_LENGTH)) throw new Exception("Não foi possível decifrar, texto cifrado adulterado.");
+
+            int valorDaChave = 0;
+            for (int i = 0; i < key.Length; i++) valorDaChave += (key[i] * (key.Length - i));
+            string textDecifrado = string.Empty;
+            for (int i = 1; i < text.Length; i += MAX_BLOCK_LENGTH) textDecifrado += (char)(Convert.ToInt32(text.Substring(i, MAX_BLOCK_LENGTH), 16) - valorDaChave);
+            return textDecifrado;
+        }
     }
 }

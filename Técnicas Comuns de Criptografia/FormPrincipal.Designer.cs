@@ -29,47 +29,48 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
-            this.rbCA = new System.Windows.Forms.RadioButton();
-            this.rbCC = new System.Windows.Forms.RadioButton();
-            this.rbCRF = new System.Windows.Forms.RadioButton();
+            this.RbCA = new System.Windows.Forms.RadioButton();
+            this.RbCC = new System.Windows.Forms.RadioButton();
+            this.RbCRF = new System.Windows.Forms.RadioButton();
             this.btAbrir = new System.Windows.Forms.Button();
+            this.RbM = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
-            // rbCA
+            // RbCA
             // 
-            this.rbCA.Checked = true;
-            this.rbCA.Location = new System.Drawing.Point(61, 16);
-            this.rbCA.Name = "rbCA";
-            this.rbCA.Size = new System.Drawing.Size(225, 29);
-            this.rbCA.TabIndex = 0;
-            this.rbCA.TabStop = true;
-            this.rbCA.Text = "Cifra Aditiva [Substituição]";
-            this.rbCA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.rbCA.UseVisualStyleBackColor = true;
+            this.RbCA.Checked = true;
+            this.RbCA.Location = new System.Drawing.Point(61, 16);
+            this.RbCA.Name = "RbCA";
+            this.RbCA.Size = new System.Drawing.Size(225, 29);
+            this.RbCA.TabIndex = 0;
+            this.RbCA.TabStop = true;
+            this.RbCA.Text = "Cifra Aditiva [Substituição]";
+            this.RbCA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.RbCA.UseVisualStyleBackColor = true;
             // 
-            // rbCC
+            // RbCC
             // 
-            this.rbCC.Location = new System.Drawing.Point(61, 67);
-            this.rbCC.Name = "rbCC";
-            this.rbCC.Size = new System.Drawing.Size(225, 29);
-            this.rbCC.TabIndex = 1;
-            this.rbCC.Text = "Cifra de César [Substituição]";
-            this.rbCC.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.rbCC.UseVisualStyleBackColor = true;
+            this.RbCC.Location = new System.Drawing.Point(61, 67);
+            this.RbCC.Name = "RbCC";
+            this.RbCC.Size = new System.Drawing.Size(225, 29);
+            this.RbCC.TabIndex = 1;
+            this.RbCC.Text = "Cifra de César [Substituição]";
+            this.RbCC.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.RbCC.UseVisualStyleBackColor = true;
             // 
-            // rbCRF
+            // RbCRF
             // 
-            this.rbCRF.Location = new System.Drawing.Point(61, 109);
-            this.rbCRF.Name = "rbCRF";
-            this.rbCRF.Size = new System.Drawing.Size(225, 48);
-            this.rbCRF.TabIndex = 2;
-            this.rbCRF.Text = "Cifra Rail Fence (Zig Zag) [Transposição]";
-            this.rbCRF.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.rbCRF.UseVisualStyleBackColor = true;
+            this.RbCRF.Location = new System.Drawing.Point(61, 109);
+            this.RbCRF.Name = "RbCRF";
+            this.RbCRF.Size = new System.Drawing.Size(225, 48);
+            this.RbCRF.TabIndex = 2;
+            this.RbCRF.Text = "Cifra Rail Fence (Zig Zag) [Transposição]";
+            this.RbCRF.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.RbCRF.UseVisualStyleBackColor = true;
             // 
             // btAbrir
             // 
-            this.btAbrir.Location = new System.Drawing.Point(109, 182);
+            this.btAbrir.Location = new System.Drawing.Point(111, 224);
             this.btAbrir.Name = "btAbrir";
             this.btAbrir.Size = new System.Drawing.Size(118, 30);
             this.btAbrir.TabIndex = 3;
@@ -77,15 +78,26 @@
             this.btAbrir.UseVisualStyleBackColor = true;
             this.btAbrir.Click += new System.EventHandler(this.BtAbrir_Click);
             // 
+            // RbM
+            // 
+            this.RbM.Location = new System.Drawing.Point(61, 163);
+            this.RbM.Name = "RbM";
+            this.RbM.Size = new System.Drawing.Size(225, 48);
+            this.RbM.TabIndex = 2;
+            this.RbM.Text = "Cifra Matemática";
+            this.RbM.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.RbM.UseVisualStyleBackColor = true;
+            // 
             // FormPrincipal
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(338, 222);
+            this.ClientSize = new System.Drawing.Size(338, 268);
             this.Controls.Add(this.btAbrir);
-            this.Controls.Add(this.rbCRF);
-            this.Controls.Add(this.rbCC);
-            this.Controls.Add(this.rbCA);
+            this.Controls.Add(this.RbM);
+            this.Controls.Add(this.RbCRF);
+            this.Controls.Add(this.RbCC);
+            this.Controls.Add(this.RbCA);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -100,9 +112,10 @@
 
         #endregion
 
-        private System.Windows.Forms.RadioButton rbCA;
-        private System.Windows.Forms.RadioButton rbCC;
-        private System.Windows.Forms.RadioButton rbCRF;
+        private System.Windows.Forms.RadioButton RbCA;
+        private System.Windows.Forms.RadioButton RbCC;
+        private System.Windows.Forms.RadioButton RbCRF;
         private System.Windows.Forms.Button btAbrir;
+        private System.Windows.Forms.RadioButton RbM;
     }
 }

@@ -19,7 +19,7 @@ namespace Técnicas_Comuns_de_Criptografia
         public FormPrincipal(int rbCheck)
         {
             InitializeComponent();
-            this.RbCheck(rbCheck);
+            RbCheck(rbCheck);
         }
 
         private void RbCheck(int x)
@@ -27,50 +27,67 @@ namespace Técnicas_Comuns_de_Criptografia
             switch (x)
             {
                 case 0:
-                    rbCA.Checked = true;
-                    rbCC.Checked = false;
-                    rbCRF.Checked = false;
+                    RbCA.Checked = true;
+                    RbCC.Checked = false;
+                    RbCRF.Checked = false;
+                    RbM.Checked = false;
                     break;
                 case 1:
-                    rbCA.Checked = false;
-                    rbCC.Checked = true;
-                    rbCRF.Checked = false;
+                    RbCA.Checked = false;
+                    RbCC.Checked = true;
+                    RbCRF.Checked = false;
+                    RbM.Checked = false;
                     break;
                 case 2:
-                    rbCA.Checked = false;
-                    rbCC.Checked = false;
-                    rbCRF.Checked = true;
+                    RbCA.Checked = false;
+                    RbCC.Checked = false;
+                    RbCRF.Checked = true;
+                    RbM.Checked = false;
+                    break;
+                case 3:
+                    RbCA.Checked = false;
+                    RbCC.Checked = false;
+                    RbCRF.Checked = false;
+                    RbM.Checked = true;
                     break;
                 default:
-                    rbCA.Checked = true;
-                    rbCC.Checked = false;
-                    rbCRF.Checked = false;
+                    RbCA.Checked = true;
+                    RbCC.Checked = false;
+                    RbCRF.Checked = false;
+                    RbM.Checked = false;
                     break;
             }
         }
 
         private void BtAbrir_Click(object sender, EventArgs e)
         {
-            if (rbCA.Checked)
+            if (RbCA.Checked)
             {
                 Hide();
                 FormCA fca = new FormCA();
                 fca.Closed += (s, args) => Close();
                 fca.Show();
             }
-            else if (rbCC.Checked)
+            else if (RbCC.Checked)
             {
                 Hide();
                 FormCC fcc = new FormCC();
                 fcc.Closed += (s, args) => Close();
                 fcc.Show();
             }
-            else if (rbCRF.Checked)
+            else if (RbCRF.Checked)
             {
                 Hide();
                 FormCRF fcrf = new FormCRF();
                 fcrf.Closed += (s, args) => Close();
                 fcrf.Show();
+            }
+            else if (RbM.Checked)
+            {
+                Hide();
+                FormM fm = new FormM();
+                fm.Closed += (s, args) => Close();
+                fm.Show();
             }
         }
     }
