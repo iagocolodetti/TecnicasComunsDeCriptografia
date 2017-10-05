@@ -147,6 +147,11 @@ namespace Técnicas_Comuns_de_Criptografia
             return textDecifrado;
         }
 
+        /// <summary>
+        /// Método de ciframento usando matemática. A partir da chave é gerado um valor que é somado ao valor de cada caractere na tabela ASCII.
+        /// </summary>
+        /// <param name="text">Texto/Palavra a ser cifrado(a).</param>
+        /// <param name="key">Chave.</param>
         public string CifrarM(string text, string key)
         {
             if (string.IsNullOrEmpty(text)) throw new Exception("Digite algum(a) texto/palavra para ser cifrado(a).");
@@ -162,7 +167,12 @@ namespace Técnicas_Comuns_de_Criptografia
             foreach (char c in text) textCifrado += Convert.ToString((c + valorDaChave), 16).PadLeft(MAX_BLOCK_LENGTH, '0');
             return textCifrado;
         }
-
+        
+        /// <summary>
+        /// Método de deciframento usando matemática. Usando a mesma chave no qual um(a) determinado(a) texto/palavra foi cifrado(a) é possível decifrá-lo(a) usando este método.
+        /// </summary>
+        /// <param name="text">Texto/Palavra a ser decifrado(a).</param>
+        /// <param name="key">Chave.</param>
         public string DecifrarM(string text, string key)
         {
             if (string.IsNullOrEmpty(text)) throw new Exception("Digite algum(a) texto/palavra para ser cifrado(a).");
