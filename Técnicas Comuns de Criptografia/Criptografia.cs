@@ -165,7 +165,7 @@ namespace Técnicas_Comuns_de_Criptografia
             int MAX_BLOCK_LENGTH = Convert.ToString((255 + valorDaChave), 16).Length;
             string textCifrado = MAX_BLOCK_LENGTH.ToString();
             foreach (char c in text) textCifrado += Convert.ToString((c + valorDaChave), 16).PadLeft(MAX_BLOCK_LENGTH, '0');
-            return textCifrado;
+            return textCifrado.ToUpper();
         }
         
         /// <summary>
