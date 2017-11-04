@@ -25,7 +25,7 @@ namespace Técnicas_Comuns_de_Criptografia
         /// <summary>
         /// Método de ciframento baseado na substituição de caracteres, no qual cada caractere é convertido para binário de acordo com a tabela ASCII e somado a uma chave binária.
         /// Este método também decifra em caso de ser um(a) texto/palavra cifrado por ele.
-        /// Técnica conhecida como 'Cifra Aditiva'.
+        /// Técnica conhecida como 'Cifra XOR'.
         /// </summary>
         /// <param name="text">Texto/Palavra a ser cifrado(a).</param>
         /// <param name="key">Chave binária.</param>

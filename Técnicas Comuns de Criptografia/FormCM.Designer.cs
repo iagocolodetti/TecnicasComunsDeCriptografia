@@ -1,6 +1,6 @@
 ﻿namespace Técnicas_Comuns_de_Criptografia
 {
-    partial class FormM
+    partial class FormCM
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormM));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCM));
             this.LbChave = new System.Windows.Forms.Label();
             this.TbChave = new System.Windows.Forms.TextBox();
             this.btCifrar = new System.Windows.Forms.Button();

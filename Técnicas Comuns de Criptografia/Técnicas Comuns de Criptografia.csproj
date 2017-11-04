@@ -47,17 +47,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Criptografia.cs" />
-    <Compile Include="FormCA.cs">
+    <Compile Include="FormCXOR.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormCA.Designer.cs">
-      <DependentUpon>FormCA.cs</DependentUpon>
+    <Compile Include="FormCXOR.Designer.cs">
+      <DependentUpon>FormCXOR.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormM.cs">
+    <Compile Include="FormCM.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormM.Designer.cs">
-      <DependentUpon>FormM.cs</DependentUpon>
+    <Compile Include="FormCM.Designer.cs">
+      <DependentUpon>FormCM.cs</DependentUpon>
     </Compile>
     <Compile Include="FormCC.cs">
       <SubType>Form</SubType>
@@ -79,11 +79,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormCA.resx">
-      <DependentUpon>FormCA.cs</DependentUpon>
+    <EmbeddedResource Include="FormCXOR.resx">
+      <DependentUpon>FormCXOR.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormM.resx">
-      <DependentUpon>FormM.cs</DependentUpon>
+    <EmbeddedResource Include="FormCM.resx">
+      <DependentUpon>FormCM.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCC.resx">
       <DependentUpon>FormCC.cs</DependentUpon>

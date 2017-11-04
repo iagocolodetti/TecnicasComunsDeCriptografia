@@ -1,6 +1,6 @@
 ﻿namespace Técnicas_Comuns_de_Criptografia
 {
-    partial class FormCA
+    partial class FormCXOR
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCA));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCXOR));
             this.LbTexto = new System.Windows.Forms.Label();
             this.LbChave = new System.Windows.Forms.Label();
             this.TbChave = new System.Windows.Forms.TextBox();
@@ -186,7 +186,7 @@
             this.BtLimparTexto.UseVisualStyleBackColor = true;
             this.BtLimparTexto.Click += new System.EventHandler(this.BtLimparTexto_Click);
             // 
-            // FormCA
+            // FormCXOR
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Silver;
@@ -200,9 +200,9 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(563, 433);
-            this.Name = "FormCA";
+            this.Name = "FormCXOR";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cifra Aditiva";
+            this.Text = "Cifra XOR";
             this.TLP1.ResumeLayout(false);
             this.TLP1.PerformLayout();
             this.ResumeLayout(false);

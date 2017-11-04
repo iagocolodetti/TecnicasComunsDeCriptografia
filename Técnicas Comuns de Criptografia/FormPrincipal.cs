@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace Técnicas_Comuns_de_Criptografia
@@ -27,46 +21,46 @@ namespace Técnicas_Comuns_de_Criptografia
             switch (x)
             {
                 case 0:
-                    RbCA.Checked = true;
+                    RbCXOR.Checked = true;
                     RbCC.Checked = false;
                     RbCRF.Checked = false;
-                    RbM.Checked = false;
+                    RbCM.Checked = false;
                     break;
                 case 1:
-                    RbCA.Checked = false;
+                    RbCXOR.Checked = false;
                     RbCC.Checked = true;
                     RbCRF.Checked = false;
-                    RbM.Checked = false;
+                    RbCM.Checked = false;
                     break;
                 case 2:
-                    RbCA.Checked = false;
+                    RbCXOR.Checked = false;
                     RbCC.Checked = false;
                     RbCRF.Checked = true;
-                    RbM.Checked = false;
+                    RbCM.Checked = false;
                     break;
                 case 3:
-                    RbCA.Checked = false;
+                    RbCXOR.Checked = false;
                     RbCC.Checked = false;
                     RbCRF.Checked = false;
-                    RbM.Checked = true;
+                    RbCM.Checked = true;
                     break;
                 default:
-                    RbCA.Checked = true;
+                    RbCXOR.Checked = true;
                     RbCC.Checked = false;
                     RbCRF.Checked = false;
-                    RbM.Checked = false;
+                    RbCM.Checked = false;
                     break;
             }
         }
 
         private void BtAbrir_Click(object sender, EventArgs e)
         {
-            if (RbCA.Checked)
+            if (RbCXOR.Checked)
             {
                 Hide();
-                FormCA fca = new FormCA();
-                fca.Closed += (s, args) => Close();
-                fca.Show();
+                FormCXOR fcxor = new FormCXOR();
+                fcxor.Closed += (s, args) => Close();
+                fcxor.Show();
             }
             else if (RbCC.Checked)
             {
@@ -82,12 +76,12 @@ namespace Técnicas_Comuns_de_Criptografia
                 fcrf.Closed += (s, args) => Close();
                 fcrf.Show();
             }
-            else if (RbM.Checked)
+            else if (RbCM.Checked)
             {
                 Hide();
-                FormM fm = new FormM();
-                fm.Closed += (s, args) => Close();
-                fm.Show();
+                FormCM fcm = new FormCM();
+                fcm.Closed += (s, args) => Close();
+                fcm.Show();
             }
         }
     }

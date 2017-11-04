@@ -29,24 +29,24 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
-            this.RbCA = new System.Windows.Forms.RadioButton();
+            this.RbCXOR = new System.Windows.Forms.RadioButton();
             this.RbCC = new System.Windows.Forms.RadioButton();
             this.RbCRF = new System.Windows.Forms.RadioButton();
             this.btAbrir = new System.Windows.Forms.Button();
-            this.RbM = new System.Windows.Forms.RadioButton();
+            this.RbCM = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
-            // RbCA
+            // RbCXOR
             // 
-            this.RbCA.Checked = true;
-            this.RbCA.Location = new System.Drawing.Point(61, 16);
-            this.RbCA.Name = "RbCA";
-            this.RbCA.Size = new System.Drawing.Size(225, 29);
-            this.RbCA.TabIndex = 0;
-            this.RbCA.TabStop = true;
-            this.RbCA.Text = "Cifra Aditiva [Substituição]";
-            this.RbCA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.RbCA.UseVisualStyleBackColor = true;
+            this.RbCXOR.Checked = true;
+            this.RbCXOR.Location = new System.Drawing.Point(61, 16);
+            this.RbCXOR.Name = "RbCXOR";
+            this.RbCXOR.Size = new System.Drawing.Size(225, 29);
+            this.RbCXOR.TabIndex = 0;
+            this.RbCXOR.TabStop = true;
+            this.RbCXOR.Text = "Cifra XOR [Substituição]";
+            this.RbCXOR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.RbCXOR.UseVisualStyleBackColor = true;
             // 
             // RbCC
             // 
@@ -78,15 +78,15 @@
             this.btAbrir.UseVisualStyleBackColor = true;
             this.btAbrir.Click += new System.EventHandler(this.BtAbrir_Click);
             // 
-            // RbM
+            // RbCM
             // 
-            this.RbM.Location = new System.Drawing.Point(61, 163);
-            this.RbM.Name = "RbM";
-            this.RbM.Size = new System.Drawing.Size(225, 48);
-            this.RbM.TabIndex = 2;
-            this.RbM.Text = "Cifra Matemática";
-            this.RbM.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.RbM.UseVisualStyleBackColor = true;
+            this.RbCM.Location = new System.Drawing.Point(61, 163);
+            this.RbCM.Name = "RbCM";
+            this.RbCM.Size = new System.Drawing.Size(225, 48);
+            this.RbCM.TabIndex = 2;
+            this.RbCM.Text = "Cifra Matemática";
+            this.RbCM.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.RbCM.UseVisualStyleBackColor = true;
             // 
             // FormPrincipal
             // 
@@ -94,10 +94,10 @@
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(338, 270);
             this.Controls.Add(this.btAbrir);
-            this.Controls.Add(this.RbM);
+            this.Controls.Add(this.RbCM);
             this.Controls.Add(this.RbCRF);
             this.Controls.Add(this.RbCC);
-            this.Controls.Add(this.RbCA);
+            this.Controls.Add(this.RbCXOR);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -112,10 +112,10 @@
 
         #endregion
 
-        private System.Windows.Forms.RadioButton RbCA;
+        private System.Windows.Forms.RadioButton RbCXOR;
         private System.Windows.Forms.RadioButton RbCC;
         private System.Windows.Forms.RadioButton RbCRF;
         private System.Windows.Forms.Button btAbrir;
-        private System.Windows.Forms.RadioButton RbM;
+        private System.Windows.Forms.RadioButton RbCM;
     }
 }

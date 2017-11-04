@@ -3,11 +3,11 @@ using System.Windows.Forms;
 
 namespace Técnicas_Comuns_de_Criptografia
 {
-    public partial class FormCA : Form
+    public partial class FormCXOR : Form
     {
         Criptografia criptografia = null;
 
-        public FormCA()
+        public FormCXOR()
         {
             InitializeComponent();
             criptografia = new Criptografia();
